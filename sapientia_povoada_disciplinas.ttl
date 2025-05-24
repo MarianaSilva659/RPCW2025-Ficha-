@@ -1,0 +1,1674 @@
+@prefix : <http://www.semanticweb.org/historiaas/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/historiaas> a owl:Ontology .
+
+:Algoritmos_Conceito a :Conceito ;
+    :nome "Algoritmos" ;
+    :éEstudadoEm :Ciência_da_Computação_Disciplina .
+
+:Antropologia_Física_Conceito a :Conceito ;
+    :nome "Antropologia Física" ;
+    :éEstudadoEm :Antropologia_Disciplina .
+
+:Antropologia_da_Educação_Disciplina a :Disciplina ;
+    :nome "Antropologia da Educação" ;
+    :pertenceA :Antropologia_TipoDeConhecimento,
+        :Educação_TipoDeConhecimento .
+
+:Análise_de_Texto_Conceito a :Conceito ;
+    :nome "Análise de Texto" ;
+    :éEstudadoEm :Literatura_Disciplina .
+
+:Banco_de_Dados_Conceito a :Conceito ;
+    :nome "Banco de Dados" ;
+    :éEstudadoEm :Informática_Disciplina .
+
+:Big_Data_Conceito a :Conceito ;
+    :estáRelacionadoCom :Análise_de_Dados_Conceito,
+        :Mineração_de_Dados_Conceito,
+        :Visualização_de_Dados_Conceito ;
+    :nome "Big Data" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Análise_de_Dados_Aplicacao,
+        :Estatística_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Biologia_Aplicada_Disciplina a :Disciplina ;
+    :nome "Biologia Aplicada" ;
+    :pertenceA :Biologia_Aplicada_TipoDeConhecimento,
+        :Ciências_Biológicas_TipoDeConhecimento .
+
+:Biologia_Molecular_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biotecnologia_Conceito,
+        :Genética_Molecular_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Biologia Molecular" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Genética_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Biotecnologia_Disciplina a :Disciplina ;
+    :nome "Biotecnologia" ;
+    :pertenceA :Biotecnologia_TipoDeConhecimento,
+        :Ciências_Biológicas_TipoDeConhecimento .
+
+:Cartografia_Conceito a :Conceito ;
+    :nome "Cartografia" ;
+    :éEstudadoEm :Geografia_Disciplina .
+
+:Circuitos_Elétricos_Conceito a :Conceito ;
+    :nome "Circuitos Elétricos" ;
+    :éEstudadoEm :Engenharia_Elétrica_Disciplina .
+
+:Ciência_dos_Materiais_Disciplina a :Disciplina ;
+    :nome "Ciência dos Materiais" ;
+    :pertenceA :Ciência_dos_Materiais_TipoDeConhecimento,
+        :Ciências_Exatas_TipoDeConhecimento .
+
+:Composição_Musical_Conceito a :Conceito ;
+    :nome "Composição Musical" ;
+    :éEstudadoEm :Música_Disciplina .
+
+:Conservação_Disciplina a :Disciplina ;
+    :nome "Conservação" ;
+    :pertenceA :Ciências_Biológicas_TipoDeConhecimento,
+        :Conservação_TipoDeConhecimento .
+
+:Coreografia_Conceito a :Conceito ;
+    :nome "Coreografia" ;
+    :éEstudadoEm :Dança_Disciplina .
+
+:Crítica_Literária_Conceito a :Conceito ;
+    :nome "Crítica Literária" ;
+    :éEstudadoEm :Literatura_Disciplina .
+
+:Crítica_de_Arte_Conceito a :Conceito ;
+    :nome "Crítica de Arte" ;
+    :éEstudadoEm :Artes_Disciplina .
+
+:Cultura_Conceito a :Conceito ;
+    :nome "Cultura" ;
+    :éEstudadoEm :Antropologia_Disciplina,
+        :Sociologia_Disciplina .
+
+:Cálculo_Conceito a :Conceito ;
+    :nome "Cálculo" ;
+    :éEstudadoEm :Matemática_Disciplina .
+
+:Células_Conceito a :Conceito ;
+    :nome "Células" ;
+    :éEstudadoEm :Biologia_Disciplina .
+
+:Células_Tronco_Conceito a :Conceito ;
+    :estáRelacionadoCom :Células_Tronco_Adultas_Conceito,
+        :Células_Tronco_Embrionárias_Conceito,
+        :Terapia_Regenerativa_Conceito ;
+    :nome "Células-Tronco" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao,
+        :Terapia_Aplicacao .
+
+:Desenvolvimento_Econômico_Conceito a :Conceito ;
+    :nome "Desenvolvimento Econômico" ;
+    :éEstudadoEm :Economia_Disciplina .
+
+:Desigualdade_Social_Conceito a :Conceito ;
+    :nome "Desigualdade Social" ;
+    :éEstudadoEm :Sociologia_Disciplina .
+
+:Didática_Disciplina a :Disciplina ;
+    :nome "Didática" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Didática_TipoDeConhecimento .
+
+:Direção_Teatral_Conceito a :Conceito ;
+    :nome "Direção Teatral" ;
+    :éEstudadoEm :Teatro_Disciplina .
+
+:Ecologia_Disciplina a :Disciplina ;
+    :nome "Ecologia" ;
+    :pertenceA :Ciências_Biológicas_TipoDeConhecimento,
+        :Ecologia_TipoDeConhecimento .
+
+:Economia_Internacional_Conceito a :Conceito ;
+    :nome "Economia Internacional" ;
+    :éEstudadoEm :Economia_Disciplina .
+
+:Educação_Disciplina a :Disciplina ;
+    :nome "Educação" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Educação_TipoDeConhecimento .
+
+:Eletromagnetismo_Conceito a :Conceito ;
+    :nome "Eletromagnetismo" ;
+    :éEstudadoEm :Física_Disciplina .
+
+:Eletrônica_Conceito a :Conceito ;
+    :nome "Eletrônica" ;
+    :éEstudadoEm :Engenharia_Elétrica_Disciplina .
+
+:Energia_Elétrica_Conceito a :Conceito ;
+    :nome "Energia Elétrica" ;
+    :éEstudadoEm :Engenharia_Elétrica_Disciplina .
+
+:Engenharia_Biomédica_Disciplina a :Disciplina ;
+    :nome "Engenharia Biomédica" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Engenharia_Biomédica_TipoDeConhecimento .
+
+:Engenharia_Civil_Conceito a :Conceito ;
+    :nome "Engenharia Civil" ;
+    :éEstudadoEm :Engenharia_Disciplina .
+
+:Engenharia_Elétrica_Conceito a :Conceito ;
+    :nome "Engenharia Elétrica" ;
+    :éEstudadoEm :Engenharia_Disciplina .
+
+:Engenharia_Mecânica_Conceito a :Conceito ;
+    :nome "Engenharia Mecânica" ;
+    :éEstudadoEm :Engenharia_Disciplina .
+
+:Engenharia_Mecânica_Disciplina a :Disciplina ;
+    :nome "Engenharia Mecânica" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Engenharia_Mecânica_TipoDeConhecimento .
+
+:Engenharia_Química_Conceito a :Conceito ;
+    :nome "Engenharia Química" ;
+    :éEstudadoEm :Engenharia_Disciplina .
+
+:Engenharia_Química_Disciplina a :Disciplina ;
+    :nome "Engenharia Química" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Engenharia_Química_TipoDeConhecimento .
+
+:Epistemologia_Conceito a :Conceito ;
+    :nome "Epistemologia" ;
+    :éEstudadoEm :Filosofia_Disciplina .
+
+:Estatística_Descritiva_Conceito a :Conceito ;
+    :nome "Estatística Descritiva" ;
+    :éEstudadoEm :Estatística_Disciplina .
+
+:Estatística_Inferencial_Conceito a :Conceito ;
+    :nome "Estatística Inferencial" ;
+    :éEstudadoEm :Estatística_Disciplina .
+
+:Estruturalismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Estrutura_Conceito,
+        :Relação_Conceito,
+        :Sistema_Conceito ;
+    :nome "Estruturalismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Linguística_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Estruturas_de_Dados_Conceito a :Conceito ;
+    :nome "Estruturas de Dados" ;
+    :éEstudadoEm :Ciência_da_Computação_Disciplina .
+
+:Etnografia_Conceito a :Conceito ;
+    :nome "Etnografia" ;
+    :éEstudadoEm :Antropologia_Disciplina .
+
+:Evolução_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biologia_Evolutiva_Conceito,
+        :Ecologia_Conceito,
+        :Genética_Conceito ;
+    :nome "Evolução" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biologia_Aplicacao,
+        :Conservação_Aplicacao,
+        :Medicina_Aplicacao ;
+    :éEstudadoEm :Biologia_Disciplina .
+
+:Filosofia_da_Educação_Disciplina a :Disciplina ;
+    :nome "Filosofia da Educação" ;
+    :pertenceA :Educação_TipoDeConhecimento,
+        :Filosofia_TipoDeConhecimento .
+
+:Filosofia_da_Mente_Conceito a :Conceito ;
+    :nome "Filosofia da Mente" ;
+    :éEstudadoEm :Filosofia_Disciplina .
+
+:Física_Aplicada_Disciplina a :Disciplina ;
+    :nome "Física Aplicada" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Física_Aplicada_TipoDeConhecimento .
+
+:Genética_Disciplina a :Disciplina ;
+    :nome "Genética" ;
+    :pertenceA :Ciências_Biológicas_TipoDeConhecimento,
+        :Genética_TipoDeConhecimento .
+
+:Geografia_Econômica_Conceito a :Conceito ;
+    :nome "Geografia Econômica" ;
+    :éEstudadoEm :Geografia_Disciplina .
+
+:Geografia_Física_Conceito a :Conceito ;
+    :nome "Geografia Física" ;
+    :éEstudadoEm :Geografia_Disciplina .
+
+:Geografia_Humana_Conceito a :Conceito ;
+    :nome "Geografia Humana" ;
+    :éEstudadoEm :Geografia_Disciplina .
+
+:Geometria_Conceito a :Conceito ;
+    :nome "Geometria" ;
+    :éEstudadoEm :Matemática_Disciplina .
+
+:Globalização_Conceito a :Conceito ;
+    :estáRelacionadoCom :Globalismo_Conceito,
+        :Interdependência_Conceito,
+        :Internacionalização_Conceito ;
+    :nome "Globalização" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Economia_Aplicacao,
+        :Política_Aplicacao .
+
+:Gramática_Conceito a :Conceito ;
+    :nome "Gramática" ;
+    :éEstudadoEm :Línguas_Disciplina .
+
+:História_Antiga_Conceito a :Conceito ;
+    :nome "História Antiga" ;
+    :éEstudadoEm :História_Disciplina .
+
+:História_Contemporânea_Conceito a :Conceito ;
+    :nome "História Contemporânea" ;
+    :éEstudadoEm :História_Disciplina .
+
+:História_Medieval_Conceito a :Conceito ;
+    :nome "História Medieval" ;
+    :éEstudadoEm :História_Disciplina .
+
+:História_Moderna_Conceito a :Conceito ;
+    :nome "História Moderna" ;
+    :éEstudadoEm :História_Disciplina .
+
+:História_da_Arte_Conceito a :Conceito ;
+    :nome "História da Arte" ;
+    :éEstudadoEm :Artes_Disciplina .
+
+:História_da_Dança_Conceito a :Conceito ;
+    :nome "História da Dança" ;
+    :éEstudadoEm :Dança_Disciplina .
+
+:História_da_Educação_Disciplina a :Disciplina ;
+    :nome "História da Educação" ;
+    :pertenceA :Educação_TipoDeConhecimento,
+        :História_TipoDeConhecimento .
+
+:História_da_Literatura_Conceito a :Conceito ;
+    :nome "História da Literatura" ;
+    :éEstudadoEm :Literatura_Disciplina .
+
+:História_da_Música_Conceito a :Conceito ;
+    :nome "História da Música" ;
+    :éEstudadoEm :Música_Disciplina .
+
+:História_do_Teatro_Conceito a :Conceito ;
+    :nome "História do Teatro" ;
+    :éEstudadoEm :Teatro_Disciplina .
+
+:Impressão_3D_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Médicas_Conceito,
+        :Impressão_Aditiva_Conceito,
+        :Modelagem_3D_Conceito ;
+    :nome "Impressão 3D" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Medicina_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Instituições_Sociais_Conceito a :Conceito ;
+    :nome "Instituições Sociais" ;
+    :éEstudadoEm :Sociologia_Disciplina .
+
+:Inteligência_Artificial_Explicável_Conceito a :Conceito ;
+    :estáRelacionadoCom :Confiança_Conceito,
+        :Interpretação_Conceito,
+        :Transparência_Conceito ;
+    :nome "Inteligência Artificial Explicável" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao,
+        :Transparência_Aplicacao .
+
+:Inteligência_Artificial_Geral_Conceito a :Conceito ;
+    :estáRelacionadoCom :Consciência_Artificial_Conceito,
+        :Superinteligência_Conceito,
+        :Ética_da_IA_Conceito ;
+    :nome "Inteligência Artificial Geral" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Futuro_Aplicacao,
+        :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Inteligência_Coletiva_Conceito a :Conceito ;
+    :estáRelacionadoCom :Colaboração_Conceito,
+        :Inteligência_Artificial_Conceito,
+        :Redes_Sociais_Conceito ;
+    :nome "Inteligência Coletiva" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Sociedade_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Internet_das_Coisas_Conceito a :Conceito ;
+    :estáRelacionadoCom :Automação_Residencial_Conceito,
+        :Dispositivos_Conectados_Conceito,
+        :Redes_de_Sensores_Conceito ;
+    :nome "Internet das Coisas" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Automação_Aplicacao,
+        :Comunicação_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Interpretação_Musical_Conceito a :Conceito ;
+    :nome "Interpretação Musical" ;
+    :éEstudadoEm :Música_Disciplina .
+
+:Interpretação_Teatral_Conceito a :Conceito ;
+    :nome "Interpretação Teatral" ;
+    :éEstudadoEm :Teatro_Disciplina .
+
+:Linguística_Conceito a :Conceito ;
+    :nome "Linguística" ;
+    :éEstudadoEm :Línguas_Disciplina .
+
+:Literatura_Conceito a :Conceito ;
+    :nome "Literatura" ;
+    :éEstudadoEm :Línguas_Disciplina .
+
+:Lógica_Formal_Conceito a :Conceito ;
+    :estáRelacionadoCom :Inteligência_Artificial_Conceito,
+        :Lógica_Matemática_Conceito,
+        :Teoria_da_Computação_Conceito ;
+    :nome "Lógica Formal" ;
+    :surgeEm :Idade_Antiga_PeríodoHistorico ;
+    :temAplicaçãoEm :Inteligência_Artificial_Aplicacao,
+        :Matemática_Aplicacao,
+        :Programação_Aplicacao .
+
+:Macroeconomia_Conceito a :Conceito ;
+    :nome "Macroeconomia" ;
+    :éEstudadoEm :Economia_Disciplina .
+
+:Matemática_Aplicada_Disciplina a :Disciplina ;
+    :nome "Matemática Aplicada" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Matemática_Aplicada_TipoDeConhecimento .
+
+:Materialismo_Histórico_Conceito a :Conceito ;
+    :estáRelacionadoCom :Comunismo_Conceito,
+        :Marxismo_Conceito,
+        :Socialismo_Conceito ;
+    :nome "Materialismo Histórico" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Política_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Mecânica_Conceito a :Conceito ;
+    :nome "Mecânica" ;
+    :éEstudadoEm :Física_Disciplina .
+
+:Metafísica_Conceito a :Conceito ;
+    :nome "Metafísica" ;
+    :éEstudadoEm :Filosofia_Disciplina .
+
+:Metodologia_Disciplina a :Disciplina ;
+    :nome "Metodologia" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Metodologia_TipoDeConhecimento .
+
+:Microbiologia_Disciplina a :Disciplina ;
+    :nome "Microbiologia" ;
+    :pertenceA :Ciências_Biológicas_TipoDeConhecimento,
+        :Microbiologia_TipoDeConhecimento .
+
+:Microeconomia_Conceito a :Conceito ;
+    :nome "Microeconomia" ;
+    :éEstudadoEm :Economia_Disciplina .
+
+:Nanotecnologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Médicas_Conceito,
+        :Materiais_Nanoestruturados_Conceito,
+        :Nanoescala_Conceito ;
+    :nome "Nanotecnologia" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Materiais_Aplicacao,
+        :Medicina_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Nanotecnologia_Disciplina a :Disciplina ;
+    :nome "Nanotecnologia" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Nanotecnologia_TipoDeConhecimento .
+
+:Números_Conceito a :Conceito ;
+    :nome "Números" ;
+    :éEstudadoEm :Matemática_Disciplina .
+
+:Pedagogia_Disciplina a :Disciplina ;
+    :nome "Pedagogia" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Pedagogia_TipoDeConhecimento .
+
+:Privacidade_de_Dados_Conceito a :Conceito ;
+    :estáRelacionadoCom :Privacidade_Online_Conceito,
+        :Proteção_de_Dados_Conceito,
+        :Regulamentação_Conceito ;
+    :nome "Privacidade de Dados" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Privacidade_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Probabilidade_Conceito a :Conceito ;
+    :nome "Probabilidade" ;
+    :éEstudadoEm :Estatística_Disciplina .
+
+:Programação_Conceito a :Conceito ;
+    :nome "Programação" ;
+    :éEstudadoEm :Informática_Disciplina .
+
+:Psicologia_Cognitiva_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cognição_Conceito,
+        :Memória_Conceito,
+        :Percepção_Conceito ;
+    :nome "Psicologia Cognitiva" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Neurociência_Aplicacao,
+        :Psicologia_Aplicacao ;
+    :éEstudadoEm :Psicologia_Disciplina .
+
+:Psicologia_Social_Conceito a :Conceito ;
+    :nome "Psicologia Social" ;
+    :éEstudadoEm :Psicologia_Disciplina .
+
+:Psicologia_da_Educação_Disciplina a :Disciplina ;
+    :nome "Psicologia da Educação" ;
+    :pertenceA :Educação_TipoDeConhecimento,
+        :Psicologia_TipoDeConhecimento .
+
+:Psicologia_do_Desenvolvimento_Conceito a :Conceito ;
+    :nome "Psicologia do Desenvolvimento" ;
+    :éEstudadoEm :Psicologia_Disciplina .
+
+:Psicoterapia_Conceito a :Conceito ;
+    :nome "Psicoterapia" ;
+    :éEstudadoEm :Psicologia_Disciplina .
+
+:Pós_Estruturalismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Desconstrução_Conceito,
+        :Pós_Modernismo_Conceito,
+        :Teoria_Crítica_Conceito ;
+    :nome "Pós-Estruturalismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Teoria_Literária_Aplicacao .
+
+:Química_Aplicada_Disciplina a :Disciplina ;
+    :nome "Química Aplicada" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Química_Aplicada_TipoDeConhecimento .
+
+:Química_Inorgânica_Conceito a :Conceito ;
+    :nome "Química Inorgânica" ;
+    :éEstudadoEm :Química_Disciplina .
+
+:Química_Orgânica_Conceito a :Conceito ;
+    :nome "Química Orgânica" ;
+    :éEstudadoEm :Química_Disciplina .
+
+:Realidade_Mista_Conceito a :Conceito ;
+    :estáRelacionadoCom :Interatividade_Conceito,
+        :Realidade_Aumentada_Conceito,
+        :Realidade_Virtual_Conceito ;
+    :nome "Realidade Mista" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Reações_Químicas_Conceito a :Conceito ;
+    :nome "Reações Químicas" ;
+    :éEstudadoEm :Química_Disciplina .
+
+:Redes_de_Computadores_Conceito a :Conceito ;
+    :nome "Redes de Computadores" ;
+    :éEstudadoEm :Informática_Disciplina .
+
+:Relatividade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Espaço_Tempo_Conceito,
+        :Física_Quântica_Conceito,
+        :Gravidade_Conceito,
+        :Teoria_da_Relatividade_Conceito ;
+    :nome "Relatividade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Astronomia_Aplicacao,
+        :Engenharia_Aplicacao,
+        :Física_Aplicacao .
+
+:Segurança_Cibernética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cibersegurança_Conceito,
+        :Proteção_de_Dados_Conceito,
+        :Segurança_de_Redes_Conceito ;
+    :nome "Segurança Cibernética" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Proteção_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Sistemas_Operacionais_Conceito a :Conceito ;
+    :nome "Sistemas Operacionais" ;
+    :éEstudadoEm :Ciência_da_Computação_Disciplina .
+
+:Sociedade_Conceito a :Conceito ;
+    :nome "Sociedade" ;
+    :éEstudadoEm :Antropologia_Disciplina,
+        :Sociologia_Disciplina .
+
+:Sociologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Estrutura_Social_Conceito,
+        :Mudança_Social_Conceito,
+        :Teoria_Social_Conceito ;
+    :nome "Sociologia" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Psicologia_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Sociologia_da_Educação_Disciplina a :Disciplina ;
+    :nome "Sociologia da Educação" ;
+    :pertenceA :Educação_TipoDeConhecimento,
+        :Sociologia_TipoDeConhecimento .
+
+:Sustentabilidade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Desenvolvimento_Sustentável_Conceito,
+        :Economia_Verde_Conceito,
+        :Responsabilidade_Social_Conceito ;
+    :nome "Sustentabilidade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Meio_Ambiente_Aplicacao,
+        :Política_Aplicacao .
+
+:Tabela_Periódica_Conceito a :Conceito ;
+    :nome "Tabela Periódica" ;
+    :éEstudadoEm :Química_Disciplina .
+
+:Tecnologia_da_Informação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Comunicação_Digital_Conceito,
+        :Gestão_da_Informação_Conceito,
+        :Informática_Conceito ;
+    :nome "Tecnologia da Informação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Informação_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Teoria_Literária_Conceito a :Conceito ;
+    :nome "Teoria Literária" ;
+    :éEstudadoEm :Literatura_Disciplina .
+
+:Teoria_Musical_Conceito a :Conceito ;
+    :nome "Teoria Musical" ;
+    :éEstudadoEm :Música_Disciplina .
+
+:Teoria_da_Arte_Conceito a :Conceito ;
+    :nome "Teoria da Arte" ;
+    :éEstudadoEm :Artes_Disciplina .
+
+:Teoria_da_Dança_Conceito a :Conceito ;
+    :nome "Teoria da Dança" ;
+    :éEstudadoEm :Dança_Disciplina .
+
+:Teoria_do_Teatro_Conceito a :Conceito ;
+    :nome "Teoria do Teatro" ;
+    :éEstudadoEm :Teatro_Disciplina .
+
+:Teoria_dos_Jogos_Conceito a :Conceito ;
+    :estáRelacionadoCom :Economia_Clássica_Conceito,
+        :Estratégia_Militar_Conceito,
+        :Teoria_da_Decisão_Conceito ;
+    :nome "Teoria dos Jogos" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Estratégia_Aplicacao,
+        :Política_Aplicacao .
+
+:Termodinâmica_Conceito a :Conceito ;
+    :nome "Termodinâmica" ;
+    :éEstudadoEm :Física_Disciplina .
+
+:Tradução_Conceito a :Conceito ;
+    :nome "Tradução" ;
+    :éEstudadoEm :Línguas_Disciplina .
+
+:Técnicas_Artísticas_Conceito a :Conceito ;
+    :nome "Técnicas Artísticas" ;
+    :éEstudadoEm :Artes_Disciplina .
+
+:Técnicas_de_Dança_Conceito a :Conceito ;
+    :nome "Técnicas de Dança" ;
+    :éEstudadoEm :Dança_Disciplina .
+
+:aprende a owl:ObjectProperty ;
+    rdfs:domain :Aprendiz ;
+    rdfs:range :Disciplina .
+
+:ensina a owl:ObjectProperty ;
+    rdfs:domain :Mestre ;
+    rdfs:range :Disciplina .
+
+:estáRelacionadoCom a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Conceito .
+
+:explica a owl:ObjectProperty ;
+    rdfs:domain :Obra ;
+    rdfs:range :Conceito .
+
+:foiEscritoPor a owl:ObjectProperty ;
+    rdfs:domain :Obra ;
+    rdfs:range :Mestre .
+
+:idade a owl:DatatypeProperty ;
+    rdfs:domain :Aprendiz .
+
+:mestreDE a owl:ObjectProperty ;
+    rdfs:domain :Mestre ;
+    rdfs:range :PeríodoHistorico .
+
+:nome a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Aprendiz :Conceito :Disciplina :Mestre :PeríodoHistorico :TipoDeConhecimento :Aplicação ) ] .
+
+:pertenceA a owl:ObjectProperty ;
+    rdfs:domain :Disciplina ;
+    rdfs:range :TipoDeConhecimento .
+
+:surgeEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :PeríodoHistorico .
+
+:temAplicaçãoEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Aplicação .
+
+:titulo a owl:DatatypeProperty ;
+    rdfs:domain :Obra .
+
+:Álgebra_Conceito a :Conceito ;
+    :nome "Álgebra" ;
+    :éEstudadoEm :Matemática_Disciplina .
+
+:Ética_Conceito a :Conceito ;
+    :nome "Ética" ;
+    :éEstudadoEm :Filosofia_Disciplina .
+
+:Ética_da_Inteligência_Artificial_Conceito a :Conceito ;
+    :estáRelacionadoCom :Privacidade_Conceito,
+        :Responsabilidade_Conceito,
+        :Segurança_Conceito ;
+    :nome "Ética da Inteligência Artificial" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Filosofia_Aplicacao,
+        :Tecnologia_Aplicacao,
+        :Ética_Aplicacao .
+
+:éEstudadoEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Disciplina .
+
+:Absurdismo_Conceito a :Conceito ;
+    :nome "Absurdismo" .
+
+:Análise_de_Dados_Conceito a :Conceito ;
+    :nome "Análise de Dados" ;
+    :éEstudadoEm :Estatística_Disciplina .
+
+:Aplicações_Práticas_Conceito a :Conceito ;
+    :nome "Aplicações Práticas" .
+
+:Aprendizado_Profundo_Conceito a :Conceito ;
+    :nome "Aprendizado Profundo" .
+
+:Aprendizado_de_Máquina_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aprendizado_Profundo_Conceito,
+        :Mineração_de_Dados_Conceito,
+        :Redes_Neurais_Conceito ;
+    :nome "Aprendizado de Máquina" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Análise_de_Dados_Aplicacao,
+        :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Artes_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Artes" .
+
+:Automação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Controle_de_Processos_Conceito,
+        :Eficiência_Conceito,
+        :Robótica_Conceito ;
+    :nome "Automação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Serviços_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Automação_Residencial_Conceito a :Conceito ;
+    :nome "Automação Residencial" .
+
+:Biologia_Aplicacao a :Aplicação ;
+    :nome "Biologia" .
+
+:Biologia_Aplicada_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Biologia Aplicada" .
+
+:Biologia_Evolutiva_Conceito a :Conceito ;
+    :nome "Biologia Evolutiva" .
+
+:Biologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Biologia" .
+
+:Biossegurança_Conceito a :Conceito ;
+    :nome "Biossegurança" .
+
+:Biotecnologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biossegurança_Conceito,
+        :Engenharia_Genética_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Biotecnologia" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Indústria_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Biotecnologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Biotecnologia" .
+
+:Blockchain_Conceito a :Conceito ;
+    :estáRelacionadoCom :Criptomoedas_Conceito,
+        :Descentralização_Conceito,
+        :Segurança_de_Dados_Conceito ;
+    :nome "Blockchain" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Finanças_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Cibernética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Robótica_Conceito,
+        :Sistemas_de_Controle_Conceito,
+        :Teoria_da_Informação_Conceito ;
+    :nome "Cibernética" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Controle_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Cibersegurança_Conceito a :Conceito ;
+    :nome "Cibersegurança" .
+
+:Ciência_da_Computação_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciência da Computação" .
+
+:Ciência_dos_Materiais_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciência dos Materiais" .
+
+:Clonagem_Conceito a :Conceito ;
+    :estáRelacionadoCom :Clonagem_Reprodutiva_Conceito,
+        :Clonagem_Terapêutica_Conceito,
+        :Ética_da_Clonagem_Conceito ;
+    :nome "Clonagem" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Clonagem_Reprodutiva_Conceito a :Conceito ;
+    :nome "Clonagem Reprodutiva" .
+
+:Clonagem_Terapêutica_Conceito a :Conceito ;
+    :nome "Clonagem Terapêutica" .
+
+:Cognição_Conceito a :Conceito ;
+    :nome "Cognição" .
+
+:Colaboração_Conceito a :Conceito ;
+    :nome "Colaboração" .
+
+:Comunicação_Digital_Conceito a :Conceito ;
+    :nome "Comunicação Digital" .
+
+:Comunismo_Conceito a :Conceito ;
+    :nome "Comunismo" .
+
+:Confiança_Conceito a :Conceito ;
+    :nome "Confiança" .
+
+:Consciência_Artificial_Conceito a :Conceito ;
+    :nome "Consciência Artificial" .
+
+:Conservação_Aplicacao a :Aplicação ;
+    :nome "Conservação" .
+
+:Conservação_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Conservação" .
+
+:Controle_Aplicacao a :Aplicação ;
+    :nome "Controle" .
+
+:Controle_de_Movimento_Conceito a :Conceito ;
+    :nome "Controle de Movimento" .
+
+:Controle_de_Processos_Conceito a :Conceito ;
+    :nome "Controle de Processos" .
+
+:Cosmologia_Conceito a :Conceito ;
+    :nome "Cosmologia" .
+
+:Criptografia_Aplicacao a :Aplicação ;
+    :nome "Criptografia" .
+
+:Criptomoedas_Conceito a :Conceito ;
+    :estáRelacionadoCom :Blockchain_Conceito,
+        :Mineração_Conceito,
+        :Pagamento_Digital_Conceito ;
+    :nome "Criptomoedas" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Finanças_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Crítica_Social_Conceito a :Conceito ;
+    :nome "Crítica Social" .
+
+:Células_Tronco_Adultas_Conceito a :Conceito ;
+    :nome "Células-Tronco Adultas" .
+
+:Células_Tronco_Embrionárias_Conceito a :Conceito ;
+    :nome "Células-Tronco Embrionárias" .
+
+:Dança_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Dança" .
+
+:Descentralização_Conceito a :Conceito ;
+    :nome "Descentralização" .
+
+:Desconstrução_Conceito a :Conceito ;
+    :nome "Desconstrução" .
+
+:Desenvolvimento_Sustentável_Conceito a :Conceito ;
+    :nome "Desenvolvimento Sustentável" .
+
+:Didática_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Didática" .
+
+:Dispositivos_Conectados_Conceito a :Conceito ;
+    :nome "Dispositivos Conectados" .
+
+:Doenças_Genéticas_Conceito a :Conceito ;
+    :nome "Doenças Genéticas" .
+
+:Ecologia_Conceito a :Conceito ;
+    :nome "Ecologia" ;
+    :éEstudadoEm :Biologia_Disciplina .
+
+:Ecologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ecologia" .
+
+:Economia_Clássica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Livre_Mercado_Conceito,
+        :Mão_Invisível_Conceito,
+        :Teoria_do_Valor_Conceito ;
+    :nome "Economia Clássica" ;
+    :surgeEm :Século_XVIII_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Finanças_Aplicacao,
+        :Política_Aplicacao .
+
+:Economia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Economia" .
+
+:Economia_Verde_Conceito a :Conceito ;
+    :nome "Economia Verde" .
+
+:Eficiência_Conceito a :Conceito ;
+    :nome "Eficiência" .
+
+:Engenharia_Biomédica_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Engenharia Biomédica" .
+
+:Engenharia_Elétrica_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Engenharia Elétrica" .
+
+:Engenharia_Genética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Clonagem_Conceito,
+        :Organismos_Geneticamente_Modificados_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Engenharia Genética" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Engenharia_Mecânica_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Engenharia Mecânica" .
+
+:Engenharia_Química_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Engenharia Química" .
+
+:Engenharia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Engenharia" .
+
+:Espaço_Tempo_Conceito a :Conceito ;
+    :nome "Espaço-Tempo" .
+
+:Estatística_Aplicacao a :Aplicação ;
+    :nome "Estatística" .
+
+:Estatística_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Estatística" .
+
+:Estratégia_Aplicacao a :Aplicação ;
+    :nome "Estratégia" .
+
+:Estratégia_Militar_Conceito a :Conceito ;
+    :nome "Estratégia Militar" .
+
+:Estrutura_Conceito a :Conceito ;
+    :nome "Estrutura" .
+
+:Estrutura_Social_Conceito a :Conceito ;
+    :nome "Estrutura Social" .
+
+:Existencialismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Absurdismo_Conceito,
+        :Existencialismo_Cristão_Conceito,
+        :Fenomenologia_Conceito ;
+    :nome "Existencialismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Filosofia_Aplicacao,
+        :Literatura_Aplicacao,
+        :Psicologia_Aplicacao .
+
+:Existencialismo_Cristão_Conceito a :Conceito ;
+    :nome "Existencialismo Cristão" .
+
+:Fenomenologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Existencialismo_Conceito,
+        :Filosofia_da_Consciência_Conceito,
+        :Subjetividade_Conceito ;
+    :nome "Fenomenologia" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Psicologia_Aplicacao .
+
+:Filosofia_da_Consciência_Conceito a :Conceito ;
+    :nome "Filosofia da Consciência" .
+
+:Frankfurt_School_Conceito a :Conceito ;
+    :nome "Frankfurt School" .
+
+:Futuro_Aplicacao a :Aplicação ;
+    :nome "Futuro" .
+
+:Física_Aplicada_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Física Aplicada" .
+
+:Física_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Física" .
+
+:Física_de_Partículas_Conceito a :Conceito ;
+    :nome "Física de Partículas" .
+
+:Genética_Conceito a :Conceito ;
+    :nome "Genética" ;
+    :éEstudadoEm :Biologia_Disciplina .
+
+:Genética_Molecular_Conceito a :Conceito ;
+    :nome "Genética Molecular" .
+
+:Genética_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Genética" .
+
+:Geografia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Geografia" .
+
+:Gestão_da_Informação_Conceito a :Conceito ;
+    :nome "Gestão da Informação" .
+
+:Globalismo_Conceito a :Conceito ;
+    :nome "Globalismo" .
+
+:Gravidade_Conceito a :Conceito ;
+    :nome "Gravidade" .
+
+:Idade_Antiga_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Idade Antiga" .
+
+:Imersão_Conceito a :Conceito ;
+    :nome "Imersão" .
+
+:Impressão_Aditiva_Conceito a :Conceito ;
+    :nome "Impressão Aditiva" .
+
+:Informação_Aplicacao a :Aplicação ;
+    :nome "Informação" .
+
+:Informática_Conceito a :Conceito ;
+    :nome "Informática" .
+
+:Informática_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Informática" .
+
+:Interdependência_Conceito a :Conceito ;
+    :nome "Interdependência" .
+
+:Internacionalização_Conceito a :Conceito ;
+    :nome "Internacionalização" .
+
+:Interpretação_Conceito a :Conceito ;
+    :nome "Interpretação" .
+
+:Linguística_Aplicacao a :Aplicação ;
+    :nome "Linguística" .
+
+:Literatura_Aplicacao a :Aplicação ;
+    :nome "Literatura" .
+
+:Literatura_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Literatura" .
+
+:Livre_Mercado_Conceito a :Conceito ;
+    :nome "Livre Mercado" .
+
+:Línguas_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Línguas" .
+
+:Lógica_Matemática_Conceito a :Conceito ;
+    :nome "Lógica Matemática" .
+
+:Matemática_Aplicacao a :Aplicação ;
+    :nome "Matemática" .
+
+:Matemática_Aplicada_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Matemática Aplicada" .
+
+:Matemática_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Matemática" .
+
+:Materiais_Aplicacao a :Aplicação ;
+    :nome "Materiais" .
+
+:Materiais_Nanoestruturados_Conceito a :Conceito ;
+    :nome "Materiais Nanoestruturados" .
+
+:Mecânica_Quântica_Conceito a :Conceito ;
+    :nome "Mecânica Quântica" .
+
+:Meio_Ambiente_Aplicacao a :Aplicação ;
+    :nome "Meio Ambiente" .
+
+:Memória_Conceito a :Conceito ;
+    :nome "Memória" .
+
+:Metodologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Metodologia" .
+
+:Microbiologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Microbiologia" .
+
+:Mineração_Conceito a :Conceito ;
+    :nome "Mineração" .
+
+:Modelagem_3D_Conceito a :Conceito ;
+    :nome "Modelagem 3D" .
+
+:Mudança_Social_Conceito a :Conceito ;
+    :nome "Mudança Social" .
+
+:Mão_Invisível_Conceito a :Conceito ;
+    :nome "Mão Invisível" .
+
+:Música_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Música" .
+
+:Nanoescala_Conceito a :Conceito ;
+    :nome "Nanoescala" .
+
+:Nanotecnologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Nanotecnologia" .
+
+:Neurociência_Aplicacao a :Aplicação ;
+    :nome "Neurociência" .
+
+:Organismos_Geneticamente_Modificados_Conceito a :Conceito ;
+    :nome "Organismos Geneticamente Modificados" .
+
+:Pagamento_Digital_Conceito a :Conceito ;
+    :nome "Pagamento Digital" .
+
+:Pedagogia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Pedagogia" .
+
+:Percepção_Conceito a :Conceito ;
+    :nome "Percepção" .
+
+:Privacidade_Aplicacao a :Aplicação ;
+    :nome "Privacidade" .
+
+:Privacidade_Conceito a :Conceito ;
+    :nome "Privacidade" .
+
+:Privacidade_Online_Conceito a :Conceito ;
+    :nome "Privacidade Online" .
+
+:Processamento_de_Linguagem_Natural_Conceito a :Conceito ;
+    :nome "Processamento de Linguagem Natural" .
+
+:Programação_Aplicacao a :Aplicação ;
+    :nome "Programação" .
+
+:Proteção_Aplicacao a :Aplicação ;
+    :nome "Proteção" .
+
+:Pós_Modernismo_Conceito a :Conceito ;
+    :nome "Pós-Modernismo" .
+
+:Química_Aplicada_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Química Aplicada" .
+
+:Química_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Química" .
+
+:Realidade_Aumentada_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Práticas_Conceito,
+        :Interatividade_Conceito,
+        :Sobreposição_de_Informações_Conceito ;
+    :nome "Realidade Aumentada" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Realidade_Virtual_Conceito a :Conceito ;
+    :estáRelacionadoCom :Imersão_Conceito,
+        :Interatividade_Conceito,
+        :Simulação_Conceito ;
+    :nome "Realidade Virtual" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Redes_Sociais_Conceito a :Conceito ;
+    :nome "Redes Sociais" .
+
+:Redes_de_Sensores_Conceito a :Conceito ;
+    :nome "Redes de Sensores" .
+
+:Regulamentação_Conceito a :Conceito ;
+    :nome "Regulamentação" .
+
+:Relação_Conceito a :Conceito ;
+    :nome "Relação" .
+
+:Responsabilidade_Conceito a :Conceito ;
+    :nome "Responsabilidade" .
+
+:Responsabilidade_Social_Conceito a :Conceito ;
+    :nome "Responsabilidade Social" .
+
+:Robótica_Aplicacao a :Aplicação ;
+    :nome "Robótica" .
+
+:Segurança_Conceito a :Conceito ;
+    :nome "Segurança" ;
+    :éEstudadoEm :Informática_Disciplina .
+
+:Segurança_da_Informação_Conceito a :Conceito ;
+    :nome "Segurança da Informação" .
+
+:Segurança_de_Dados_Conceito a :Conceito ;
+    :nome "Segurança de Dados" .
+
+:Segurança_de_Redes_Conceito a :Conceito ;
+    :nome "Segurança de Redes" .
+
+:Sensoriamento_Conceito a :Conceito ;
+    :nome "Sensoriamento" .
+
+:Simulação_Conceito a :Conceito ;
+    :nome "Simulação" .
+
+:Sistema_Conceito a :Conceito ;
+    :nome "Sistema" .
+
+:Sistemas_de_Controle_Conceito a :Conceito ;
+    :nome "Sistemas de Controle" ;
+    :éEstudadoEm :Engenharia_Elétrica_Disciplina .
+
+:Sobreposição_de_Informações_Conceito a :Conceito ;
+    :nome "Sobreposição de Informações" .
+
+:Socialismo_Conceito a :Conceito ;
+    :nome "Socialismo" .
+
+:Sociedade_Aplicacao a :Aplicação ;
+    :nome "Sociedade" .
+
+:Subjetividade_Conceito a :Conceito ;
+    :nome "Subjetividade" .
+
+:Superinteligência_Conceito a :Conceito ;
+    :nome "Superinteligência" .
+
+:Século_XVIII_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XVIII" .
+
+:Teatro_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Teatro" .
+
+:Teoria_Crítica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Crítica_Social_Conceito,
+        :Frankfurt_School_Conceito,
+        :Marxismo_Conceito ;
+    :nome "Teoria Crítica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Teoria_Literária_Aplicacao a :Aplicação ;
+    :nome "Teoria Literária" .
+
+:Teoria_Quântica_de_Campos_Conceito a :Conceito ;
+    :nome "Teoria Quântica de Campos" .
+
+:Teoria_Social_Conceito a :Conceito ;
+    :nome "Teoria Social" .
+
+:Teoria_da_Computação_Conceito a :Conceito ;
+    :nome "Teoria da Computação" .
+
+:Teoria_da_Comunicação_Conceito a :Conceito ;
+    :nome "Teoria da Comunicação" .
+
+:Teoria_da_Decisão_Conceito a :Conceito ;
+    :nome "Teoria da Decisão" .
+
+:Teoria_da_Gravitação_Conceito a :Conceito ;
+    :nome "Teoria da Gravitação" .
+
+:Teoria_da_Informação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cibernética_Conceito,
+        :Segurança_da_Informação_Conceito,
+        :Teoria_da_Comunicação_Conceito ;
+    :nome "Teoria da Informação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Criptografia_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Teoria_da_Relatividade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cosmologia_Conceito,
+        :Física_Quântica_Conceito,
+        :Teoria_da_Gravitação_Conceito ;
+    :nome "Teoria da Relatividade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Astronomia_Aplicacao,
+        :Engenharia_Aplicacao,
+        :Física_Aplicacao .
+
+:Teoria_do_Valor_Conceito a :Conceito ;
+    :nome "Teoria do Valor" .
+
+:Terapia_Aplicacao a :Aplicação ;
+    :nome "Terapia" .
+
+:Terapia_Regenerativa_Conceito a :Conceito ;
+    :nome "Terapia Regenerativa" .
+
+:Terapia_de_Substituição_Conceito a :Conceito ;
+    :nome "Terapia de Substituição" .
+
+:Transparência_Aplicacao a :Aplicação ;
+    :nome "Transparência" .
+
+:Transparência_Conceito a :Conceito ;
+    :nome "Transparência" .
+
+:Vetores_Virais_Conceito a :Conceito ;
+    :nome "Vetores Virais" .
+
+:Visualização_de_Dados_Conceito a :Conceito ;
+    :nome "Visualização de Dados" .
+
+:Ética_Aplicacao a :Aplicação ;
+    :nome "Ética" .
+
+:Ética_da_Clonagem_Conceito a :Conceito ;
+    :nome "Ética da Clonagem" .
+
+:Ética_da_IA_Conceito a :Conceito ;
+    :nome "Ética da IA" .
+
+:Antropologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Antropologia" .
+
+:Análise_de_Dados_Aplicacao a :Aplicação ;
+    :nome "Análise de Dados" .
+
+:Aplicações_Médicas_Conceito a :Conceito ;
+    :nome "Aplicações Médicas" .
+
+:Astronomia_Aplicacao a :Aplicação ;
+    :nome "Astronomia" .
+
+:Automação_Aplicacao a :Aplicação ;
+    :nome "Automação" .
+
+:Ciências_Sociais_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciências Sociais" .
+
+:Filosofia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Filosofia" .
+
+:Física_Quântica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Física_de_Partículas_Conceito,
+        :Mecânica_Quântica_Conceito,
+        :Teoria_Quântica_de_Campos_Conceito ;
+    :nome "Física Quântica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Engenharia_Aplicacao,
+        :Física_Aplicacao,
+        :Tecnologia_Aplicacao ;
+    :éEstudadoEm :Física_Disciplina .
+
+:Genética_Aplicacao a :Aplicação ;
+    :nome "Genética" .
+
+:História_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "História" .
+
+:Inteligência_Artificial_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aprendizado_de_Máquina_Conceito,
+        :Processamento_de_Linguagem_Natural_Conceito,
+        :Redes_Neurais_Conceito ;
+    :nome "Inteligência Artificial" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Automação_Aplicacao,
+        :Robótica_Aplicacao,
+        :Tecnologia_Aplicacao ;
+    :éEstudadoEm :Ciência_da_Computação_Disciplina .
+
+:Marxismo_Conceito a :Conceito ;
+    :nome "Marxismo" .
+
+:Mineração_de_Dados_Conceito a :Conceito ;
+    :nome "Mineração de Dados" .
+
+:Proteção_de_Dados_Conceito a :Conceito ;
+    :nome "Proteção de Dados" .
+
+:Psicologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Psicologia" .
+
+:Redes_Neurais_Conceito a :Conceito ;
+    :nome "Redes Neurais" .
+
+:Robótica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Automação_Conceito,
+        :Controle_de_Movimento_Conceito,
+        :Sensoriamento_Conceito ;
+    :nome "Robótica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Serviços_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Serviços_Aplicacao a :Aplicação ;
+    :nome "Serviços" .
+
+:Sociologia_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Sociologia" .
+
+:Agricultura_Aplicacao a :Aplicação ;
+    :nome "Agricultura" .
+
+:Antropologia_Aplicacao a :Aplicação ;
+    :nome "Antropologia" .
+
+:Aprendiz a owl:Class .
+
+:Cultura_Aplicacao a :Aplicação ;
+    :nome "Cultura" .
+
+:Engenharia_Aplicacao a :Aplicação ;
+    :nome "Engenharia" .
+
+:Entretenimento_Aplicacao a :Aplicação ;
+    :nome "Entretenimento" .
+
+:Finanças_Aplicacao a :Aplicação ;
+    :nome "Finanças" .
+
+:Física_Aplicacao a :Aplicação ;
+    :nome "Física" .
+
+:Interatividade_Conceito a :Conceito ;
+    :nome "Interatividade" .
+
+:Obra a owl:Class .
+
+:Segurança_Aplicacao a :Aplicação ;
+    :nome "Segurança" .
+
+:Século_XIX_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XIX" .
+
+:Terapia_Gênica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Doenças_Genéticas_Conceito,
+        :Terapia_de_Substituição_Conceito,
+        :Vetores_Virais_Conceito ;
+    :nome "Terapia Gênica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Genética_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Antropologia_Disciplina a :Disciplina ;
+    :nome "Antropologia" ;
+    :pertenceA :Antropologia_TipoDeConhecimento,
+        :Ciências_Humanas_TipoDeConhecimento .
+
+:Artes_Disciplina a :Disciplina ;
+    :nome "Artes" ;
+    :pertenceA :Artes_TipoDeConhecimento,
+        :Humanidades_TipoDeConhecimento .
+
+:Biologia_Disciplina a :Disciplina ;
+    :nome "Biologia" ;
+    :pertenceA :Biologia_TipoDeConhecimento,
+        :Ciências_Biológicas_TipoDeConhecimento .
+
+:Ciência_da_Computação_Disciplina a :Disciplina ;
+    :nome "Ciência da Computação" ;
+    :pertenceA :Ciência_da_Computação_TipoDeConhecimento,
+        :Ciências_Exatas_TipoDeConhecimento .
+
+:Comunicação_Aplicacao a :Aplicação ;
+    :nome "Comunicação" .
+
+:Dança_Disciplina a :Disciplina ;
+    :nome "Dança" ;
+    :pertenceA :Dança_TipoDeConhecimento,
+        :Humanidades_TipoDeConhecimento .
+
+:Economia_Disciplina a :Disciplina ;
+    :nome "Economia" ;
+    :pertenceA :Ciências_Sociais_TipoDeConhecimento,
+        :Economia_TipoDeConhecimento .
+
+:Engenharia_Disciplina a :Disciplina ;
+    :nome "Engenharia" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Engenharia_TipoDeConhecimento .
+
+:Engenharia_Elétrica_Disciplina a :Disciplina ;
+    :nome "Engenharia Elétrica" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Engenharia_Elétrica_TipoDeConhecimento .
+
+:Estatística_Disciplina a :Disciplina ;
+    :nome "Estatística" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Estatística_TipoDeConhecimento .
+
+:Filosofia_Disciplina a :Disciplina ;
+    :nome "Filosofia" ;
+    :pertenceA :Filosofia_TipoDeConhecimento,
+        :Humanidades_TipoDeConhecimento .
+
+:Física_Disciplina a :Disciplina ;
+    :nome "Física" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Física_TipoDeConhecimento .
+
+:Geografia_Disciplina a :Disciplina ;
+    :nome "Geografia" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Geografia_TipoDeConhecimento .
+
+:História_Disciplina a :Disciplina ;
+    :nome "História" ;
+    :pertenceA :História_TipoDeConhecimento,
+        :Humanidades_TipoDeConhecimento .
+
+:Indústria_Aplicacao a :Aplicação ;
+    :nome "Indústria" .
+
+:Informática_Disciplina a :Disciplina ;
+    :nome "Informática" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Informática_TipoDeConhecimento .
+
+:Inteligência_Artificial_Aplicacao a :Aplicação ;
+    :nome "Inteligência Artificial" .
+
+:Literatura_Disciplina a :Disciplina ;
+    :nome "Literatura" ;
+    :pertenceA :Humanidades_TipoDeConhecimento,
+        :Literatura_TipoDeConhecimento .
+
+:Línguas_Disciplina a :Disciplina ;
+    :nome "Línguas" ;
+    :pertenceA :Humanidades_TipoDeConhecimento,
+        :Línguas_TipoDeConhecimento .
+
+:Matemática_Disciplina a :Disciplina ;
+    :nome "Matemática" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Matemática_TipoDeConhecimento .
+
+:Mestre a owl:Class .
+
+:Música_Disciplina a :Disciplina ;
+    :nome "Música" ;
+    :pertenceA :Humanidades_TipoDeConhecimento,
+        :Música_TipoDeConhecimento .
+
+:Psicologia_Aplicacao a :Aplicação ;
+    :nome "Psicologia" .
+
+:Psicologia_Disciplina a :Disciplina ;
+    :nome "Psicologia" ;
+    :pertenceA :Ciências_Humanas_TipoDeConhecimento,
+        :Psicologia_TipoDeConhecimento .
+
+:Química_Disciplina a :Disciplina ;
+    :nome "Química" ;
+    :pertenceA :Ciências_Exatas_TipoDeConhecimento,
+        :Química_TipoDeConhecimento .
+
+:Sociologia_Aplicacao a :Aplicação ;
+    :nome "Sociologia" .
+
+:Sociologia_Disciplina a :Disciplina ;
+    :nome "Sociologia" ;
+    :pertenceA :Ciências_Sociais_TipoDeConhecimento,
+        :Sociologia_TipoDeConhecimento .
+
+:Teatro_Disciplina a :Disciplina ;
+    :nome "Teatro" ;
+    :pertenceA :Humanidades_TipoDeConhecimento,
+        :Teatro_TipoDeConhecimento .
+
+:Biotecnologia_Aplicacao a :Aplicação ;
+    :nome "Biotecnologia" .
+
+:Educação_Aplicacao a :Aplicação ;
+    :nome "Educação" .
+
+:Filosofia_Aplicacao a :Aplicação ;
+    :nome "Filosofia" .
+
+:Política_Aplicacao a :Aplicação ;
+    :nome "Política" .
+
+:Economia_Aplicacao a :Aplicação ;
+    :nome "Economia" .
+
+:Educação_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Educação" .
+
+:Ciências_Biológicas_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciências Biológicas" .
+
+:Ciências_Humanas_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciências Humanas" .
+
+:Humanidades_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Humanidades" .
+
+:PeríodoHistorico a owl:Class .
+
+:Medicina_Aplicacao a :Aplicação ;
+    :nome "Medicina" .
+
+:Ciências_Exatas_TipoDeConhecimento a :TipoDeConhecimento ;
+    :nome "Ciências Exatas" .
+
+:Século_XXI_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XXI" .
+
+:Século_XX_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XX" .
+
+:Tecnologia_Aplicacao a :Aplicação ;
+    :nome "Tecnologia" .
+
+:TipoDeConhecimento a owl:Class .
+
+:Aplicação a owl:Class .
+
+:Disciplina a owl:Class .
+
+:Conceito a owl:Class .
+

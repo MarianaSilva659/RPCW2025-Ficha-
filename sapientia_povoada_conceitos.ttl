@@ -1,0 +1,995 @@
+@prefix : <http://www.semanticweb.org/historiaas/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://www.semanticweb.org/historiaas> a owl:Ontology .
+
+:Big_Data_Conceito a :Conceito ;
+    :estáRelacionadoCom :Análise_de_Dados_Conceito,
+        :Mineração_de_Dados_Conceito,
+        :Visualização_de_Dados_Conceito ;
+    :nome "Big Data" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Análise_de_Dados_Aplicacao,
+        :Estatística_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Biologia_Molecular_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biotecnologia_Conceito,
+        :Genética_Molecular_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Biologia Molecular" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Genética_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Células_Tronco_Conceito a :Conceito ;
+    :estáRelacionadoCom :Células_Tronco_Adultas_Conceito,
+        :Células_Tronco_Embrionárias_Conceito,
+        :Terapia_Regenerativa_Conceito ;
+    :nome "Células-Tronco" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao,
+        :Terapia_Aplicacao .
+
+:Estruturalismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Estrutura_Conceito,
+        :Relação_Conceito,
+        :Sistema_Conceito ;
+    :nome "Estruturalismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Linguística_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Evolução_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biologia_Evolutiva_Conceito,
+        :Ecologia_Conceito,
+        :Genética_Conceito ;
+    :nome "Evolução" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biologia_Aplicacao,
+        :Conservação_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Globalização_Conceito a :Conceito ;
+    :estáRelacionadoCom :Globalismo_Conceito,
+        :Interdependência_Conceito,
+        :Internacionalização_Conceito ;
+    :nome "Globalização" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Economia_Aplicacao,
+        :Política_Aplicacao .
+
+:Impressão_3D_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Médicas_Conceito,
+        :Impressão_Aditiva_Conceito,
+        :Modelagem_3D_Conceito ;
+    :nome "Impressão 3D" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Medicina_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Inteligência_Artificial_Explicável_Conceito a :Conceito ;
+    :estáRelacionadoCom :Confiança_Conceito,
+        :Interpretação_Conceito,
+        :Transparência_Conceito ;
+    :nome "Inteligência Artificial Explicável" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao,
+        :Transparência_Aplicacao .
+
+:Inteligência_Artificial_Geral_Conceito a :Conceito ;
+    :estáRelacionadoCom :Consciência_Artificial_Conceito,
+        :Superinteligência_Conceito,
+        :Ética_da_IA_Conceito ;
+    :nome "Inteligência Artificial Geral" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Futuro_Aplicacao,
+        :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Inteligência_Coletiva_Conceito a :Conceito ;
+    :estáRelacionadoCom :Colaboração_Conceito,
+        :Inteligência_Artificial_Conceito,
+        :Redes_Sociais_Conceito ;
+    :nome "Inteligência Coletiva" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Sociedade_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Internet_das_Coisas_Conceito a :Conceito ;
+    :estáRelacionadoCom :Automação_Residencial_Conceito,
+        :Dispositivos_Conectados_Conceito,
+        :Redes_de_Sensores_Conceito ;
+    :nome "Internet das Coisas" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Automação_Aplicacao,
+        :Comunicação_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Lógica_Formal_Conceito a :Conceito ;
+    :estáRelacionadoCom :Inteligência_Artificial_Conceito,
+        :Lógica_Matemática_Conceito,
+        :Teoria_da_Computação_Conceito ;
+    :nome "Lógica Formal" ;
+    :surgeEm :Idade_Antiga_PeríodoHistorico ;
+    :temAplicaçãoEm :Inteligência_Artificial_Aplicacao,
+        :Matemática_Aplicacao,
+        :Programação_Aplicacao .
+
+:Materialismo_Histórico_Conceito a :Conceito ;
+    :estáRelacionadoCom :Comunismo_Conceito,
+        :Marxismo_Conceito,
+        :Socialismo_Conceito ;
+    :nome "Materialismo Histórico" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Política_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Nanotecnologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Médicas_Conceito,
+        :Materiais_Nanoestruturados_Conceito,
+        :Nanoescala_Conceito ;
+    :nome "Nanotecnologia" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Materiais_Aplicacao,
+        :Medicina_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Privacidade_de_Dados_Conceito a :Conceito ;
+    :estáRelacionadoCom :Privacidade_Online_Conceito,
+        :Proteção_de_Dados_Conceito,
+        :Regulamentação_Conceito ;
+    :nome "Privacidade de Dados" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Privacidade_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Psicologia_Cognitiva_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cognição_Conceito,
+        :Memória_Conceito,
+        :Percepção_Conceito ;
+    :nome "Psicologia Cognitiva" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Neurociência_Aplicacao,
+        :Psicologia_Aplicacao .
+
+:Pós_Estruturalismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Desconstrução_Conceito,
+        :Pós_Modernismo_Conceito,
+        :Teoria_Crítica_Conceito ;
+    :nome "Pós-Estruturalismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Teoria_Literária_Aplicacao .
+
+:Realidade_Mista_Conceito a :Conceito ;
+    :estáRelacionadoCom :Interatividade_Conceito,
+        :Realidade_Aumentada_Conceito,
+        :Realidade_Virtual_Conceito ;
+    :nome "Realidade Mista" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Relatividade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Espaço_Tempo_Conceito,
+        :Física_Quântica_Conceito,
+        :Gravidade_Conceito,
+        :Teoria_da_Relatividade_Conceito ;
+    :nome "Relatividade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Astronomia_Aplicacao,
+        :Engenharia_Aplicacao,
+        :Física_Aplicacao .
+
+:Segurança_Cibernética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cibersegurança_Conceito,
+        :Proteção_de_Dados_Conceito,
+        :Segurança_de_Redes_Conceito ;
+    :nome "Segurança Cibernética" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Proteção_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Sociologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Estrutura_Social_Conceito,
+        :Mudança_Social_Conceito,
+        :Teoria_Social_Conceito ;
+    :nome "Sociologia" ;
+    :surgeEm :Século_XIX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Psicologia_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Sustentabilidade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Desenvolvimento_Sustentável_Conceito,
+        :Economia_Verde_Conceito,
+        :Responsabilidade_Social_Conceito ;
+    :nome "Sustentabilidade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Meio_Ambiente_Aplicacao,
+        :Política_Aplicacao .
+
+:Tecnologia_da_Informação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Comunicação_Digital_Conceito,
+        :Gestão_da_Informação_Conceito,
+        :Informática_Conceito ;
+    :nome "Tecnologia da Informação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Informação_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Teoria_dos_Jogos_Conceito a :Conceito ;
+    :estáRelacionadoCom :Economia_Clássica_Conceito,
+        :Estratégia_Militar_Conceito,
+        :Teoria_da_Decisão_Conceito ;
+    :nome "Teoria dos Jogos" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Estratégia_Aplicacao,
+        :Política_Aplicacao .
+
+:aprende a owl:ObjectProperty ;
+    rdfs:domain :Aprendiz ;
+    rdfs:range :Disciplina .
+
+:ensina a owl:ObjectProperty ;
+    rdfs:domain :Mestre ;
+    rdfs:range :Disciplina .
+
+:estáRelacionadoCom a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Conceito .
+
+:explica a owl:ObjectProperty ;
+    rdfs:domain :Obra ;
+    rdfs:range :Conceito .
+
+:foiEscritoPor a owl:ObjectProperty ;
+    rdfs:domain :Obra ;
+    rdfs:range :Mestre .
+
+:idade a owl:DatatypeProperty ;
+    rdfs:domain :Aprendiz .
+
+:mestreDE a owl:ObjectProperty ;
+    rdfs:domain :Mestre ;
+    rdfs:range :PeríodoHistorico .
+
+:nome a owl:DatatypeProperty ;
+    rdfs:domain [ a owl:Class ;
+            owl:unionOf ( :Aprendiz :Conceito :Disciplina :Mestre :PeríodoHistorico :TipoDeConhecimento :Aplicação ) ] .
+
+:pertenceA a owl:ObjectProperty ;
+    rdfs:domain :Disciplina ;
+    rdfs:range :TipoDeConhecimento .
+
+:surgeEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :PeríodoHistorico .
+
+:temAplicaçãoEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Aplicação .
+
+:titulo a owl:DatatypeProperty ;
+    rdfs:domain :Obra .
+
+:Ética_da_Inteligência_Artificial_Conceito a :Conceito ;
+    :estáRelacionadoCom :Privacidade_Conceito,
+        :Responsabilidade_Conceito,
+        :Segurança_Conceito ;
+    :nome "Ética da Inteligência Artificial" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Filosofia_Aplicacao,
+        :Tecnologia_Aplicacao,
+        :Ética_Aplicacao .
+
+:éEstudadoEm a owl:ObjectProperty ;
+    rdfs:domain :Conceito ;
+    rdfs:range :Disciplina .
+
+:Absurdismo_Conceito a :Conceito ;
+    :nome "Absurdismo" .
+
+:Análise_de_Dados_Conceito a :Conceito ;
+    :nome "Análise de Dados" .
+
+:Aplicações_Práticas_Conceito a :Conceito ;
+    :nome "Aplicações Práticas" .
+
+:Aprendizado_Profundo_Conceito a :Conceito ;
+    :nome "Aprendizado Profundo" .
+
+:Aprendizado_de_Máquina_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aprendizado_Profundo_Conceito,
+        :Mineração_de_Dados_Conceito,
+        :Redes_Neurais_Conceito ;
+    :nome "Aprendizado de Máquina" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Análise_de_Dados_Aplicacao,
+        :Inteligência_Artificial_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Automação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Controle_de_Processos_Conceito,
+        :Eficiência_Conceito,
+        :Robótica_Conceito ;
+    :nome "Automação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Serviços_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Automação_Residencial_Conceito a :Conceito ;
+    :nome "Automação Residencial" .
+
+:Biologia_Aplicacao a :Aplicação ;
+    :nome "Biologia" .
+
+:Biologia_Evolutiva_Conceito a :Conceito ;
+    :nome "Biologia Evolutiva" .
+
+:Biossegurança_Conceito a :Conceito ;
+    :nome "Biossegurança" .
+
+:Biotecnologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Biossegurança_Conceito,
+        :Engenharia_Genética_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Biotecnologia" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Indústria_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Blockchain_Conceito a :Conceito ;
+    :estáRelacionadoCom :Criptomoedas_Conceito,
+        :Descentralização_Conceito,
+        :Segurança_de_Dados_Conceito ;
+    :nome "Blockchain" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Finanças_Aplicacao,
+        :Segurança_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Cibernética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Robótica_Conceito,
+        :Sistemas_de_Controle_Conceito,
+        :Teoria_da_Informação_Conceito ;
+    :nome "Cibernética" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Controle_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Cibersegurança_Conceito a :Conceito ;
+    :nome "Cibersegurança" .
+
+:Clonagem_Conceito a :Conceito ;
+    :estáRelacionadoCom :Clonagem_Reprodutiva_Conceito,
+        :Clonagem_Terapêutica_Conceito,
+        :Ética_da_Clonagem_Conceito ;
+    :nome "Clonagem" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Clonagem_Reprodutiva_Conceito a :Conceito ;
+    :nome "Clonagem Reprodutiva" .
+
+:Clonagem_Terapêutica_Conceito a :Conceito ;
+    :nome "Clonagem Terapêutica" .
+
+:Cognição_Conceito a :Conceito ;
+    :nome "Cognição" .
+
+:Colaboração_Conceito a :Conceito ;
+    :nome "Colaboração" .
+
+:Comunicação_Digital_Conceito a :Conceito ;
+    :nome "Comunicação Digital" .
+
+:Comunismo_Conceito a :Conceito ;
+    :nome "Comunismo" .
+
+:Confiança_Conceito a :Conceito ;
+    :nome "Confiança" .
+
+:Consciência_Artificial_Conceito a :Conceito ;
+    :nome "Consciência Artificial" .
+
+:Conservação_Aplicacao a :Aplicação ;
+    :nome "Conservação" .
+
+:Controle_Aplicacao a :Aplicação ;
+    :nome "Controle" .
+
+:Controle_de_Movimento_Conceito a :Conceito ;
+    :nome "Controle de Movimento" .
+
+:Controle_de_Processos_Conceito a :Conceito ;
+    :nome "Controle de Processos" .
+
+:Cosmologia_Conceito a :Conceito ;
+    :nome "Cosmologia" .
+
+:Criptografia_Aplicacao a :Aplicação ;
+    :nome "Criptografia" .
+
+:Criptomoedas_Conceito a :Conceito ;
+    :estáRelacionadoCom :Blockchain_Conceito,
+        :Mineração_Conceito,
+        :Pagamento_Digital_Conceito ;
+    :nome "Criptomoedas" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Finanças_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Crítica_Social_Conceito a :Conceito ;
+    :nome "Crítica Social" .
+
+:Células_Tronco_Adultas_Conceito a :Conceito ;
+    :nome "Células-Tronco Adultas" .
+
+:Células_Tronco_Embrionárias_Conceito a :Conceito ;
+    :nome "Células-Tronco Embrionárias" .
+
+:Descentralização_Conceito a :Conceito ;
+    :nome "Descentralização" .
+
+:Desconstrução_Conceito a :Conceito ;
+    :nome "Desconstrução" .
+
+:Desenvolvimento_Sustentável_Conceito a :Conceito ;
+    :nome "Desenvolvimento Sustentável" .
+
+:Dispositivos_Conectados_Conceito a :Conceito ;
+    :nome "Dispositivos Conectados" .
+
+:Doenças_Genéticas_Conceito a :Conceito ;
+    :nome "Doenças Genéticas" .
+
+:Ecologia_Conceito a :Conceito ;
+    :nome "Ecologia" .
+
+:Economia_Clássica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Livre_Mercado_Conceito,
+        :Mão_Invisível_Conceito,
+        :Teoria_do_Valor_Conceito ;
+    :nome "Economia Clássica" ;
+    :surgeEm :Século_XVIII_PeríodoHistorico ;
+    :temAplicaçãoEm :Economia_Aplicacao,
+        :Finanças_Aplicacao,
+        :Política_Aplicacao .
+
+:Economia_Verde_Conceito a :Conceito ;
+    :nome "Economia Verde" .
+
+:Eficiência_Conceito a :Conceito ;
+    :nome "Eficiência" .
+
+:Engenharia_Genética_Conceito a :Conceito ;
+    :estáRelacionadoCom :Clonagem_Conceito,
+        :Organismos_Geneticamente_Modificados_Conceito,
+        :Terapia_Gênica_Conceito ;
+    :nome "Engenharia Genética" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Agricultura_Aplicacao,
+        :Biotecnologia_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Espaço_Tempo_Conceito a :Conceito ;
+    :nome "Espaço-Tempo" .
+
+:Estatística_Aplicacao a :Aplicação ;
+    :nome "Estatística" .
+
+:Estratégia_Aplicacao a :Aplicação ;
+    :nome "Estratégia" .
+
+:Estratégia_Militar_Conceito a :Conceito ;
+    :nome "Estratégia Militar" .
+
+:Estrutura_Conceito a :Conceito ;
+    :nome "Estrutura" .
+
+:Estrutura_Social_Conceito a :Conceito ;
+    :nome "Estrutura Social" .
+
+:Existencialismo_Conceito a :Conceito ;
+    :estáRelacionadoCom :Absurdismo_Conceito,
+        :Existencialismo_Cristão_Conceito,
+        :Fenomenologia_Conceito ;
+    :nome "Existencialismo" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Filosofia_Aplicacao,
+        :Literatura_Aplicacao,
+        :Psicologia_Aplicacao .
+
+:Existencialismo_Cristão_Conceito a :Conceito ;
+    :nome "Existencialismo Cristão" .
+
+:Fenomenologia_Conceito a :Conceito ;
+    :estáRelacionadoCom :Existencialismo_Conceito,
+        :Filosofia_da_Consciência_Conceito,
+        :Subjetividade_Conceito ;
+    :nome "Fenomenologia" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Antropologia_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Psicologia_Aplicacao .
+
+:Filosofia_da_Consciência_Conceito a :Conceito ;
+    :nome "Filosofia da Consciência" .
+
+:Frankfurt_School_Conceito a :Conceito ;
+    :nome "Frankfurt School" .
+
+:Futuro_Aplicacao a :Aplicação ;
+    :nome "Futuro" .
+
+:Física_de_Partículas_Conceito a :Conceito ;
+    :nome "Física de Partículas" .
+
+:Genética_Conceito a :Conceito ;
+    :nome "Genética" .
+
+:Genética_Molecular_Conceito a :Conceito ;
+    :nome "Genética Molecular" .
+
+:Gestão_da_Informação_Conceito a :Conceito ;
+    :nome "Gestão da Informação" .
+
+:Globalismo_Conceito a :Conceito ;
+    :nome "Globalismo" .
+
+:Gravidade_Conceito a :Conceito ;
+    :nome "Gravidade" .
+
+:Idade_Antiga_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Idade Antiga" .
+
+:Imersão_Conceito a :Conceito ;
+    :nome "Imersão" .
+
+:Impressão_Aditiva_Conceito a :Conceito ;
+    :nome "Impressão Aditiva" .
+
+:Informação_Aplicacao a :Aplicação ;
+    :nome "Informação" .
+
+:Informática_Conceito a :Conceito ;
+    :nome "Informática" .
+
+:Interdependência_Conceito a :Conceito ;
+    :nome "Interdependência" .
+
+:Internacionalização_Conceito a :Conceito ;
+    :nome "Internacionalização" .
+
+:Interpretação_Conceito a :Conceito ;
+    :nome "Interpretação" .
+
+:Linguística_Aplicacao a :Aplicação ;
+    :nome "Linguística" .
+
+:Literatura_Aplicacao a :Aplicação ;
+    :nome "Literatura" .
+
+:Livre_Mercado_Conceito a :Conceito ;
+    :nome "Livre Mercado" .
+
+:Lógica_Matemática_Conceito a :Conceito ;
+    :nome "Lógica Matemática" .
+
+:Matemática_Aplicacao a :Aplicação ;
+    :nome "Matemática" .
+
+:Materiais_Aplicacao a :Aplicação ;
+    :nome "Materiais" .
+
+:Materiais_Nanoestruturados_Conceito a :Conceito ;
+    :nome "Materiais Nanoestruturados" .
+
+:Mecânica_Quântica_Conceito a :Conceito ;
+    :nome "Mecânica Quântica" .
+
+:Meio_Ambiente_Aplicacao a :Aplicação ;
+    :nome "Meio Ambiente" .
+
+:Memória_Conceito a :Conceito ;
+    :nome "Memória" .
+
+:Mineração_Conceito a :Conceito ;
+    :nome "Mineração" .
+
+:Modelagem_3D_Conceito a :Conceito ;
+    :nome "Modelagem 3D" .
+
+:Mudança_Social_Conceito a :Conceito ;
+    :nome "Mudança Social" .
+
+:Mão_Invisível_Conceito a :Conceito ;
+    :nome "Mão Invisível" .
+
+:Nanoescala_Conceito a :Conceito ;
+    :nome "Nanoescala" .
+
+:Neurociência_Aplicacao a :Aplicação ;
+    :nome "Neurociência" .
+
+:Organismos_Geneticamente_Modificados_Conceito a :Conceito ;
+    :nome "Organismos Geneticamente Modificados" .
+
+:Pagamento_Digital_Conceito a :Conceito ;
+    :nome "Pagamento Digital" .
+
+:Percepção_Conceito a :Conceito ;
+    :nome "Percepção" .
+
+:Privacidade_Aplicacao a :Aplicação ;
+    :nome "Privacidade" .
+
+:Privacidade_Conceito a :Conceito ;
+    :nome "Privacidade" .
+
+:Privacidade_Online_Conceito a :Conceito ;
+    :nome "Privacidade Online" .
+
+:Processamento_de_Linguagem_Natural_Conceito a :Conceito ;
+    :nome "Processamento de Linguagem Natural" .
+
+:Programação_Aplicacao a :Aplicação ;
+    :nome "Programação" .
+
+:Proteção_Aplicacao a :Aplicação ;
+    :nome "Proteção" .
+
+:Pós_Modernismo_Conceito a :Conceito ;
+    :nome "Pós-Modernismo" .
+
+:Realidade_Aumentada_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aplicações_Práticas_Conceito,
+        :Interatividade_Conceito,
+        :Sobreposição_de_Informações_Conceito ;
+    :nome "Realidade Aumentada" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Realidade_Virtual_Conceito a :Conceito ;
+    :estáRelacionadoCom :Imersão_Conceito,
+        :Interatividade_Conceito,
+        :Simulação_Conceito ;
+    :nome "Realidade Virtual" ;
+    :surgeEm :Século_XXI_PeríodoHistorico ;
+    :temAplicaçãoEm :Educação_Aplicacao,
+        :Entretenimento_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Redes_Sociais_Conceito a :Conceito ;
+    :nome "Redes Sociais" .
+
+:Redes_de_Sensores_Conceito a :Conceito ;
+    :nome "Redes de Sensores" .
+
+:Regulamentação_Conceito a :Conceito ;
+    :nome "Regulamentação" .
+
+:Relação_Conceito a :Conceito ;
+    :nome "Relação" .
+
+:Responsabilidade_Conceito a :Conceito ;
+    :nome "Responsabilidade" .
+
+:Responsabilidade_Social_Conceito a :Conceito ;
+    :nome "Responsabilidade Social" .
+
+:Robótica_Aplicacao a :Aplicação ;
+    :nome "Robótica" .
+
+:Segurança_Conceito a :Conceito ;
+    :nome "Segurança" .
+
+:Segurança_da_Informação_Conceito a :Conceito ;
+    :nome "Segurança da Informação" .
+
+:Segurança_de_Dados_Conceito a :Conceito ;
+    :nome "Segurança de Dados" .
+
+:Segurança_de_Redes_Conceito a :Conceito ;
+    :nome "Segurança de Redes" .
+
+:Sensoriamento_Conceito a :Conceito ;
+    :nome "Sensoriamento" .
+
+:Simulação_Conceito a :Conceito ;
+    :nome "Simulação" .
+
+:Sistema_Conceito a :Conceito ;
+    :nome "Sistema" .
+
+:Sistemas_de_Controle_Conceito a :Conceito ;
+    :nome "Sistemas de Controle" .
+
+:Sobreposição_de_Informações_Conceito a :Conceito ;
+    :nome "Sobreposição de Informações" .
+
+:Socialismo_Conceito a :Conceito ;
+    :nome "Socialismo" .
+
+:Sociedade_Aplicacao a :Aplicação ;
+    :nome "Sociedade" .
+
+:Subjetividade_Conceito a :Conceito ;
+    :nome "Subjetividade" .
+
+:Superinteligência_Conceito a :Conceito ;
+    :nome "Superinteligência" .
+
+:Século_XVIII_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XVIII" .
+
+:Teoria_Crítica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Crítica_Social_Conceito,
+        :Frankfurt_School_Conceito,
+        :Marxismo_Conceito ;
+    :nome "Teoria Crítica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Cultura_Aplicacao,
+        :Filosofia_Aplicacao,
+        :Sociologia_Aplicacao .
+
+:Teoria_Literária_Aplicacao a :Aplicação ;
+    :nome "Teoria Literária" .
+
+:Teoria_Quântica_de_Campos_Conceito a :Conceito ;
+    :nome "Teoria Quântica de Campos" .
+
+:Teoria_Social_Conceito a :Conceito ;
+    :nome "Teoria Social" .
+
+:Teoria_da_Computação_Conceito a :Conceito ;
+    :nome "Teoria da Computação" .
+
+:Teoria_da_Comunicação_Conceito a :Conceito ;
+    :nome "Teoria da Comunicação" .
+
+:Teoria_da_Decisão_Conceito a :Conceito ;
+    :nome "Teoria da Decisão" .
+
+:Teoria_da_Gravitação_Conceito a :Conceito ;
+    :nome "Teoria da Gravitação" .
+
+:Teoria_da_Informação_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cibernética_Conceito,
+        :Segurança_da_Informação_Conceito,
+        :Teoria_da_Comunicação_Conceito ;
+    :nome "Teoria da Informação" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Comunicação_Aplicacao,
+        :Criptografia_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Teoria_da_Relatividade_Conceito a :Conceito ;
+    :estáRelacionadoCom :Cosmologia_Conceito,
+        :Física_Quântica_Conceito,
+        :Teoria_da_Gravitação_Conceito ;
+    :nome "Teoria da Relatividade" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Astronomia_Aplicacao,
+        :Engenharia_Aplicacao,
+        :Física_Aplicacao .
+
+:Teoria_do_Valor_Conceito a :Conceito ;
+    :nome "Teoria do Valor" .
+
+:Terapia_Aplicacao a :Aplicação ;
+    :nome "Terapia" .
+
+:Terapia_Regenerativa_Conceito a :Conceito ;
+    :nome "Terapia Regenerativa" .
+
+:Terapia_de_Substituição_Conceito a :Conceito ;
+    :nome "Terapia de Substituição" .
+
+:Transparência_Aplicacao a :Aplicação ;
+    :nome "Transparência" .
+
+:Transparência_Conceito a :Conceito ;
+    :nome "Transparência" .
+
+:Vetores_Virais_Conceito a :Conceito ;
+    :nome "Vetores Virais" .
+
+:Visualização_de_Dados_Conceito a :Conceito ;
+    :nome "Visualização de Dados" .
+
+:Ética_Aplicacao a :Aplicação ;
+    :nome "Ética" .
+
+:Ética_da_Clonagem_Conceito a :Conceito ;
+    :nome "Ética da Clonagem" .
+
+:Ética_da_IA_Conceito a :Conceito ;
+    :nome "Ética da IA" .
+
+:Análise_de_Dados_Aplicacao a :Aplicação ;
+    :nome "Análise de Dados" .
+
+:Aplicações_Médicas_Conceito a :Conceito ;
+    :nome "Aplicações Médicas" .
+
+:Astronomia_Aplicacao a :Aplicação ;
+    :nome "Astronomia" .
+
+:Automação_Aplicacao a :Aplicação ;
+    :nome "Automação" .
+
+:Física_Quântica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Física_de_Partículas_Conceito,
+        :Mecânica_Quântica_Conceito,
+        :Teoria_Quântica_de_Campos_Conceito ;
+    :nome "Física Quântica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Engenharia_Aplicacao,
+        :Física_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Genética_Aplicacao a :Aplicação ;
+    :nome "Genética" .
+
+:Inteligência_Artificial_Conceito a :Conceito ;
+    :estáRelacionadoCom :Aprendizado_de_Máquina_Conceito,
+        :Processamento_de_Linguagem_Natural_Conceito,
+        :Redes_Neurais_Conceito ;
+    :nome "Inteligência Artificial" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Automação_Aplicacao,
+        :Robótica_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Marxismo_Conceito a :Conceito ;
+    :nome "Marxismo" .
+
+:Mineração_de_Dados_Conceito a :Conceito ;
+    :nome "Mineração de Dados" .
+
+:Proteção_de_Dados_Conceito a :Conceito ;
+    :nome "Proteção de Dados" .
+
+:Redes_Neurais_Conceito a :Conceito ;
+    :nome "Redes Neurais" .
+
+:Robótica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Automação_Conceito,
+        :Controle_de_Movimento_Conceito,
+        :Sensoriamento_Conceito ;
+    :nome "Robótica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Indústria_Aplicacao,
+        :Serviços_Aplicacao,
+        :Tecnologia_Aplicacao .
+
+:Serviços_Aplicacao a :Aplicação ;
+    :nome "Serviços" .
+
+:TipoDeConhecimento a owl:Class .
+
+:Agricultura_Aplicacao a :Aplicação ;
+    :nome "Agricultura" .
+
+:Antropologia_Aplicacao a :Aplicação ;
+    :nome "Antropologia" .
+
+:Aprendiz a owl:Class .
+
+:Cultura_Aplicacao a :Aplicação ;
+    :nome "Cultura" .
+
+:Engenharia_Aplicacao a :Aplicação ;
+    :nome "Engenharia" .
+
+:Entretenimento_Aplicacao a :Aplicação ;
+    :nome "Entretenimento" .
+
+:Finanças_Aplicacao a :Aplicação ;
+    :nome "Finanças" .
+
+:Física_Aplicacao a :Aplicação ;
+    :nome "Física" .
+
+:Interatividade_Conceito a :Conceito ;
+    :nome "Interatividade" .
+
+:Obra a owl:Class .
+
+:Segurança_Aplicacao a :Aplicação ;
+    :nome "Segurança" .
+
+:Século_XIX_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XIX" .
+
+:Terapia_Gênica_Conceito a :Conceito ;
+    :estáRelacionadoCom :Doenças_Genéticas_Conceito,
+        :Terapia_de_Substituição_Conceito,
+        :Vetores_Virais_Conceito ;
+    :nome "Terapia Gênica" ;
+    :surgeEm :Século_XX_PeríodoHistorico ;
+    :temAplicaçãoEm :Biotecnologia_Aplicacao,
+        :Genética_Aplicacao,
+        :Medicina_Aplicacao .
+
+:Comunicação_Aplicacao a :Aplicação ;
+    :nome "Comunicação" .
+
+:Indústria_Aplicacao a :Aplicação ;
+    :nome "Indústria" .
+
+:Inteligência_Artificial_Aplicacao a :Aplicação ;
+    :nome "Inteligência Artificial" .
+
+:Mestre a owl:Class .
+
+:Psicologia_Aplicacao a :Aplicação ;
+    :nome "Psicologia" .
+
+:Sociologia_Aplicacao a :Aplicação ;
+    :nome "Sociologia" .
+
+:Biotecnologia_Aplicacao a :Aplicação ;
+    :nome "Biotecnologia" .
+
+:Disciplina a owl:Class .
+
+:Educação_Aplicacao a :Aplicação ;
+    :nome "Educação" .
+
+:Filosofia_Aplicacao a :Aplicação ;
+    :nome "Filosofia" .
+
+:Política_Aplicacao a :Aplicação ;
+    :nome "Política" .
+
+:Economia_Aplicacao a :Aplicação ;
+    :nome "Economia" .
+
+:PeríodoHistorico a owl:Class .
+
+:Medicina_Aplicacao a :Aplicação ;
+    :nome "Medicina" .
+
+:Século_XXI_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XXI" .
+
+:Século_XX_PeríodoHistorico a :PeríodoHistorico ;
+    :nome "Século XX" .
+
+:Tecnologia_Aplicacao a :Aplicação ;
+    :nome "Tecnologia" .
+
+:Aplicação a owl:Class .
+
+:Conceito a owl:Class .
+

@@ -1,0 +1,281 @@
+12. Quais são os conceitos ensinados por um determinado mestre (arbitra um) - Isaac Newton?
+```sparql
+
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT DISTINCT ?nomeConceito
+WHERE {
+  ?mestre rdf:type :Mestre ;
+          :nome "Isaac Newton" .
+
+  ?mestre :ensina ?disciplina .
+
+  ?conceito rdf:type :Conceito ;
+            :éEstudadoEm ?disciplina ;
+            :nome ?nomeConceito .
+}
+
+```
+
+
+13.Que obras explicam o conceito de "Relatividade"?
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?obra ?titulo
+WHERE {
+  ?conceito rdf:type :Conceito ;
+            :nome "Relatividade" .
+
+  ?obra rdf:type :Obra ;
+        :explica ?conceito ;
+        :titulo ?titulo .
+}
+```
+
+
+14. Em que disciplinas se estudam "Ciências Sociais"? 
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?nomeDisciplina
+WHERE {
+  ?disciplina a :Disciplina ;
+              :nome ?nomeDisciplina ;
+    		  :pertenceA ?tipo.
+  ?tipo :nome "Ciências Sociais" .
+}
+```
+
+
+15.Qual é a aplicação prática dos conhecimentos em "Lógica Formal"?
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?aplicacao ?nomeAplicacao
+WHERE {
+  ?conceito rdf:type :Conceito ;
+           :nome "Lógica Formal" .
+
+  ?conceito :temAplicaçãoEm ?aplicacao .
+  ?aplicacao rdf:type :Aplicação ;
+             :nome ?nomeAplicacao .
+}
+```
+
+
+
+16. Quais disciplinas pertencem ao tipo de conhecimento "Ciências Exatas"?
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?disciplina ?nomeDisciplina
+WHERE {
+  ?disciplina rdf:type :Disciplina ;
+              :nome ?nomeDisciplina ;
+              :pertenceA ?tipoConhecimento .
+              
+  ?tipoConhecimento rdf:type :TipoDeConhecimento ;
+                   :nome "Ciências Exatas" .
+}
+```
+
+
+
+17. Que mestres ensinaram no século XIX?
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?mestre ?nomeMestre
+WHERE {
+  ?mestre rdf:type :Mestre ;
+          :nome ?nomeMestre ;
+          :mestreDE ?periodo .
+
+  ?periodo :nome "Século XIX" .
+}
+```
+
+
+
+18. Que aprendizes estudam "Programação"?
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?aprendiz ?nomeAprendiz
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :nome ?nomeAprendiz ;
+            :aprende ?disciplina .
+	?conceito :éEstudadoEm ?disciplina.
+    ?conceito :nome "Programação" .
+}
+```
+
+19. Qual a distribuição de aprendizes por disciplina? (Resultado será uma lista de pares: Disciplina,
+ número de alunos).
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?nomeDisciplina (COUNT(?aprendiz) AS ?numeroDeAprendizes)
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :aprende ?disciplina .
+
+  ?disciplina :nome ?nomeDisciplina .
+}
+GROUP BY ?nomeDisciplina
+ORDER BY DESC(?numeroDeAprendizes)
+```
+
+20. Qual a distribuição de conceitos por período histórico? (Resultado será uma lista de pares:
+ Período, número de conceitos).
+ ```sparql
+ PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?nomePeriodo (COUNT(?conceito) AS ?numeroDeConceitos)
+WHERE {
+  ?conceito rdf:type :Conceito ;
+            :surgeEm ?periodo .
+  ?periodo :nome ?nomePeriodo .
+}
+GROUP BY ?nomePeriodo
+ORDER BY DESC(?numeroDeConceitos)
+```
+
+21. Quais os títulos das obras associadas a cada conceito? (Resultado será uma lista de pares:
+ Conceito, Lista de títulos de obras)
+  ```sparql
+  PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?nomeConceito (GROUP_CONCAT(?tituloObra; separator=", ") AS ?titulosObras)
+WHERE {
+  ?obra rdf:type :Obra ;
+        :explica ?conceito ;
+        :titulo ?tituloObra .
+  ?conceito :nome ?nomeConceito .
+}
+GROUP BY ?nomeConceito
+ORDER BY ?nomeConceito
+```
+
+
+22. Quais os aprendizes que frequentam cada uma das disciplinas? (Resultado será uma lista de
+ pares: Disciplina, Lista dos nomes dos aprendizes que frequentam a disciplina)
+  ```sparql
+  PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?nomeDisciplina (GROUP_CONCAT(?nomeAprendiz; separator=", ") AS ?aprendizes)
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :aprende ?disciplina ;
+            :nome ?nomeAprendiz .
+  ?disciplina :nome ?nomeDisciplina .
+}
+GROUP BY ?nomeDisciplina
+ORDER BY ?nomeDisciplina
+```
+
+23. Qual a distribuição de aprendizes por escalões etários? (Resultado será uma lista de pares:
+ Escalão etário, número aprendizes nesse escalão); Considera os seguintes escalões: [17, 34], [35,
+ 44], [45, 54], [55, 64], [65, 74], [75, 100].
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+SELECT ?escalao (COUNT(?aprendiz) AS ?total)
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :idade ?idade .
+
+  BIND(xsd:integer(?idade) AS ?idadeInt)
+
+  BIND(
+    IF(?idadeInt >= 17 && ?idadeInt <= 34, "[17, 34]",
+    IF(?idadeInt >= 35 && ?idadeInt <= 44, "[35, 44]",
+    IF(?idadeInt >= 45 && ?idadeInt <= 54, "[45, 54]",
+    IF(?idadeInt >= 55 && ?idadeInt <= 64, "[55, 64]",
+    IF(?idadeInt >= 65 && ?idadeInt <= 74, "[65, 74]",
+    IF(?idadeInt >= 75 && ?idadeInt <= 100, "[75, 100]", "Outro")))))) AS ?escalao)
+}
+GROUP BY ?escalao
+ORDER BY ?escalao
+``` 
+
+24. Cria uma nova relação na ontologia, estudaCom, que relaciona um aluno com um mestre.
+
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT {
+  ?aprendiz :estudaCom ?mestre .
+}
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :aprende ?disciplina .
+  ?mestre rdf:type :Mestre ;
+          :ensina ?disciplina .
+}
+```
+
+
+25. Cria uma query CONSTRUCT para calcular os novos triplos da nova relação 
+estudaCom; Altera a query para uma query INSERT e acrescenta esses triplos à ontologia;
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT {
+  ?aprendiz :estudaCom ?mestre .
+}
+WHERE {
+  ?aprendiz rdf:type :Aprendiz ;
+            :aprende ?disciplina .
+
+  ?mestre rdf:type :Mestre ;
+          :ensina ?disciplina .
+}
+```
+
+26. Cria uma nova relação na ontologia, dáBasesPara, que relaciona uma disciplina com uma aplicação;
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+CONSTRUCT {
+  ?disciplina :dáBasesPara ?aplicacao .
+}
+WHERE {
+  ?conceito :éEstudadoEm ?disciplina ;
+            :temAplicaçãoEm ?aplicacao .
+}
+```  
+
+
+27. Cria uma query CONSTRUCT para calcular os novos triplos da nova relação 
+dáBasesPara ;Altera a query para uma query INSERT e acrescenta esses triplos à ontologia
+```sparql
+PREFIX : <http://www.semanticweb.org/historiaas/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+INSERT {
+  ?disciplina :dáBasesPara ?aplicacao .
+}
+WHERE {
+  ?conceito :éEstudadoEm ?disciplina ;
+            :temAplicaçãoEm ?aplicacao .
+}
+```
